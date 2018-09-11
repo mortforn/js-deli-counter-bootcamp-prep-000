@@ -24,7 +24,7 @@ function currentLine(line) {
     while (index < line.length) {
     newString += `${index + 1}. ${line[index]}, `;
     index++;
-    var finalString = newString.substring(0, newString.length - 2 );
+    var finalString = newString.substring(0, newString.length - 2 );//.length should be 2 because you're starting two away from the end!!!!!
     }
       return finalString;
     }
